@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Belajar CSS Dasar</h1>
+      <p>Box Model, Flexbox, & Form Styling</p>
+    </header>
+
+    <main class="content-container">
+      <section class="box-model-demo">
+        <h2>1. Demo Box Model</h2>
+        <p>
+          Kotak di bawah ini menerapkan property margin, padding, border, serta
+          width dan height.
+        </p>
+        <div class="custom-box">Target Box Model</div>
+      </section>
+
+      <section class="flexbox-demo">
+        <h2>2. Demo Flexbox Container</h2>
+        <div class="flex-container">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+      </section>
+
+      <section class="form-container">
+        <h2>3. Form Styling</h2>
+        <form action="#" method="POST" class="styled-form">
+          <div class="form-group">
+            <label for="name">Nama Lengkap:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="contoh@email.com"
+            />
+          </div>
+
+          <button type="submit" class="btn-submit">Kirim Data</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2026 Lab CSS Basics.</p>
+    </footer>
+  </body>
+</html>

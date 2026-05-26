@@ -1,0 +1,140 @@
+/* Reset Dasar & Layout Umum (Step 7) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Step 7: Page Layout Styling (Header, Main Content, Footer) */
+.main-header {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  flex: 1; /* Memastikan footer tetap berada di bawah jika konten sedikit */
+}
+
+section {
+  background: #ffffff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 5px;
+}
+
+/* Step 4: Apply CSS Box Model */
+.custom-box {
+  /* Properties requirement */
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  margin: 25px;
+  border: 3px solid #3498db;
+
+  /* Tambahan agar visualisasi menarik */
+  background-color: #e8f4f8;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+/* Step 5: Create Layout Using Flexbox */
+.flex-container {
+  /* Required properties */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px dashed #ccc;
+}
+
+.flex-item {
+  background-color: #e74c3c;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Step 6: Style HTML Forms */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Styling Labels */
+.styled-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Styling Input Fields */
+.styled-form input[type="text"],
+.styled-form input[type="email"] {
+  width: 100%;
+  padding: 10px; /* Requirement: padding */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Requirement: border-radius */
+  background-color: #fff; /* Requirement: background-color */
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.styled-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Styling Buttons */
+.btn-submit {
+  padding: 10px 20px; /* Requirement: padding */
+  border-radius: 4px; /* Requirement: border-radius */
+  background-color: #2ecc71; /* Requirement: background-color */
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #27ae60;
+}
+
+/* Step 7: Footer Styling */
+.main-footer {
+  background-color: #34495e;
+  color: #bdc3c7;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: auto;
+}
